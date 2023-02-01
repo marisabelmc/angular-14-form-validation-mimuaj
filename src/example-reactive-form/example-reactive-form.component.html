@@ -1,0 +1,13 @@
+<p>example-reactive-form</p>
+<form [formGroup]="formExample">
+  <label for="Name">Name</label>
+  <input id="Name" name="Name" formControlName="name" />
+  <label for="Age">Age</label>
+  <input id="Age" name="Age" formControlName="age" />
+  <label for="Email">Email</label>
+  <input id="Email" name="Email" formControlName="email" />
+</form>
+
+<p>{{ formExample.value | json }}</p>
+<p>Valid: {{ formExample.valid }}</p>
+<p>{{ formExample.get('name')?.errors | json }}</p>
