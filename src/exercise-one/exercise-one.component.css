@@ -1,0 +1,27 @@
+/* Add application styles & imports to this file! */
+
+label {
+  /* Uniform size & alignment */
+
+  display: inline-block;
+
+  width: 40%;
+
+  text-align: right;
+}
+
+input {
+  /* Uniform text field size */
+
+  width: 30%;
+
+  box-sizing: border-box;
+
+  padding: 5px;
+
+  margin: 10px;
+}
+
+button {
+  margin: 20px;
+}

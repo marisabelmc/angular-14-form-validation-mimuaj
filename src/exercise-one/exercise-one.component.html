@@ -1,0 +1,23 @@
+<p>exercise-one works!</p>
+<form [formGroup]="formExercise">
+  <label for="Name">Name</label>
+  <input id="Name" name="Name" formControlName="name" />
+  <label for="Email">Email</label>
+  <input id="Email" name="Email" formControlName="email" />
+  <label for="BirthDate">Birth Date</label>
+  <input id="BirthDate" name="BirthDate" formControlName="birthDate" />
+  <label for="Age">Age</label>
+  <input id="Age" name="Age" formControlName="age" />
+  <label for="dniExpiryDate">DNI Expiry Date</label>
+  <input
+    id="dniExpiryDate"
+    name="dniExpiryDate"
+    formControlName="dniExpiryDate"
+  />
+</form>
+
+<p>{{ formExercise.get('name')?.errors | json }}</p>
+<p>{{ formExercise.get('email')?.errors | json }}</p>
+<p>{{ formExercise.get('birthDate')?.errors | json }}</p>
+<p>{{ formExercise.get('dniExpiryDate')?.errors | json }}</p>
+<p>Valid: {{ formExercise.valid }}</p>
